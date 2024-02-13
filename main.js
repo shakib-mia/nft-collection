@@ -1,5 +1,6 @@
 import Lenis from "@studio-freight/lenis";
-
+AOS.init();
+// alert(window.innerWidth);
 const lenis = new Lenis();
 
 lenis.on("scroll", (e) => {
