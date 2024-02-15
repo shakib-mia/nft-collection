@@ -177,17 +177,17 @@
               <p class="font-medium">Current Bid</p>
               <div class="grid grid-cols-3">
                 <aside>
-                  <h4>18</h4>
+                  <h4 id="hour">18</h4>
                   <p>Hours</p>
                 </aside>
 
                 <aside>
-                  <h4>57</h4>
+                  <h4 id="minutes">00</h4>
                   <p>Minutes</p>
                 </aside>
 
                 <aside>
-                  <h4>14</h4>
+                  <h4 id="seconds">00</h4>
                   <p>Seconds</p>
                 </aside>
               </div>
@@ -340,6 +340,7 @@
               <button
                 class="w-fit ml-auto primary flex items-center gap-2"
                 data-aos="fade-left"
+                data-aos-duration="1500"
               >
                 Explore More
                 <img
@@ -444,23 +445,31 @@
         <img
           src="./assets/images/Ellipse 434.png"
           alt=""
-          class="absolute right-0 bottom-0 h-[27%]"
+          class="absolute right-[-3%] bottom-0 h-[26%]"
         />
         <div class="container grid grid-cols-1 xl:grid-cols-2 mb-10">
-          <img
-            src="./assets/images/community.png"
-            alt=""
-            class="relative xl:-left-20 xl:scale-150 hidden xl:block"
-          />
+          <div data-aos="fade-right" data-aos-duration="1500">
+            <img
+              src="./assets/images/community.png"
+              alt=""
+              class="relative xl:-left-20 xl:scale-150 hidden xl:block"
+            />
+          </div>
 
           <aside class="xl:mt-40">
             <h3
               class="font-semibold leading-9 md:leading-[3rem] xl:leading-[3.75rem] md:w-1/2 xl:w-full"
+              data-aos="fade-left"
+              data-aos-duration="1500"
             >
               Join the community and get the best NFT collection
             </h3>
 
-            <button class="secondary relative -left-8 mt-6 xl:mt-12">
+            <button
+              class="secondary relative -left-8 mt-6 xl:mt-12"
+              data-aos="fade-left"
+              data-aos-duration="1500"
+            >
               Join Community
             </button>
           </aside>
