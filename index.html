@@ -28,12 +28,12 @@
         <label for="nav-check" class="xl:hidden absolute right-4 top-2">
           <img
             src="./assets/icons/hamburger.png"
-            class="w-6 h-auto"
+            class="w-[30px] h-auto"
             alt="hamburger"
           />
         </label>
         <ul
-          class="flex flex-col xl:flex-row gap-[3.12rem] items-end xl:items-center xl:justify-end h-0 xl:h-auto overflow-hidden transition-[height] w-full backdrop-blur xl:backdrop-blur-0 relative mt-10 xl:mt-0"
+          class="flex flex-col xl:flex-row gap-5 xl:gap-[3.12rem] items-end xl:items-center xl:justify-end h-0 xl:h-auto overflow-hidden transition-[height] w-full backdrop-blur xl:backdrop-blur-0 absolute left-0 md:static mt-10 xl:mt-0"
           id="nav-items"
         >
           <li>
@@ -64,7 +64,7 @@
             alt=""
             class="absolute left-0 top-0"
           />
-          <aside class="z-0 pt-[100px]">
+          <aside class="z-0 pt-10 xl:pt-[100px] text-center xl:text-left">
             <h1
               class="font-semibold xl:leading-[5.625rem]"
               data-aos="fade-right"
@@ -131,7 +131,7 @@
     <main class="absolute z-0 left-0 right-0 mx-auto">
       <!-- Bitcoin Art work section -->
       <section
-        class="grid grid-cols-1 items-center xl:grid-cols-2 relative container py-32"
+        class="grid grid-cols-1 items-center xl:grid-cols-2 relative container py-10"
       >
         <aside
           class="hidden xl:block"
@@ -163,7 +163,7 @@
           </p>
 
           <div
-            class="py-10 xl:py-20 flex divide-x-2 divide-white text-white"
+            class="py-8 xl:py-20 flex divide-x-2 divide-white text-white"
             data-aos="fade-left"
             data-aos-duration="1500"
             data-aos-delay="200"
@@ -338,7 +338,7 @@
               </a>
 
               <button
-                class="w-fit ml-auto primary flex items-center gap-2"
+                class="w-fit mx-auto xl:ml-auto primary flex items-center gap-2"
                 data-aos="fade-left"
                 data-aos-duration="1500"
               >
@@ -381,7 +381,7 @@
         </div>
 
         <div
-          class="grid grid-cols-4 gap-6 xl:gap-0 text-center xl:text-left mt-20"
+          class="grid grid-cols-4 gap-6 xl:gap-0 text-center xl:text-left mt-10 xl:mt-20"
         >
           <div
             class="flex flex-col items-center gap-2 xl:gap-9"
@@ -445,7 +445,7 @@
         <img
           src="./assets/images/Ellipse 434.png"
           alt=""
-          class="absolute right-[-3%] bottom-0 h-[26%]"
+          class="absolute right-0 bottom-0 h-[26%]"
         />
         <div class="container grid grid-cols-1 xl:grid-cols-2 mb-10">
           <div data-aos="fade-right" data-aos-duration="1500">
@@ -456,9 +456,9 @@
             />
           </div>
 
-          <aside class="xl:mt-40">
+          <aside class="xl:mt-40 flex flex-col items-center xl:items-start">
             <h3
-              class="font-semibold leading-9 md:leading-[3rem] xl:leading-[3.75rem] md:w-1/2 xl:w-full"
+              class="font-semibold leading-9 md:leading-[3rem] xl:leading-[3.75rem] md:w-1/2 xl:w-full text-center xl:text-left"
               data-aos="fade-left"
               data-aos-duration="1500"
             >
@@ -466,7 +466,7 @@
             </h3>
 
             <button
-              class="secondary relative -left-8 mt-6 xl:mt-12"
+              class="secondary mt-6 xl:mt-12 relative left-0 xl:-left-8"
               data-aos="fade-left"
               data-aos-duration="1500"
             >
@@ -488,15 +488,25 @@
           "
         >
           <div class="relative container">
-            <div class="flex gap-5 flex-row flex-wrap justify-between">
+            <div
+              class="flex gap-5 flex-col items-center lg:flex-row flex-wrap justify-between"
+            >
               <h4 class="clash-display font-semibold">NFTme</h4>
               <ul
-                class="flex flex-col xl:flex-row gap-8 xl:gap-16 order-2 xl:order-1 w-full xl:w-auto"
+                class="flex flex-col items-center lg:flex-row gap-[1.2rem] xl:gap-16 order-2 xl:order-1 w-full xl:w-auto"
               >
-                <li class="text-base">Explore</li>
-                <li class="text-base">Marketplace</li>
-                <li class="text-base">Artists</li>
-                <li class="text-base">Contact</li>
+                <li class="text-base">
+                  <a href="#" class="hover:underline">Explore</a>
+                </li>
+                <li class="text-base">
+                  <a href="#" class="hover:underline">Marketplace</a>
+                </li>
+                <li class="text-base">
+                  <a href="#" class="hover:underline">Artists</a>
+                </li>
+                <li class="text-base">
+                  <a href="#" class="hover:underline">Contact</a>
+                </li>
               </ul>
 
               <aside
@@ -539,12 +549,19 @@
             >
               <p class="text-sm">Privacy policy</p>
               <p class="xl:pl-4 text-sm">
-                Copyright @ Kartik Bansal 2022. All Rights Reserved.
+                Copyright @<a
+                  class="underline hover:no-underline"
+                  href="https://www.figma.com/file/5Qocnzgr3m9770W0Z1nPHy/Landing-Page-UI-Kit-(Community)?type=design&node-id=485-190&mode=design&t=Z7w8azF78322ygWO-0"
+                  target="_blank"
+                  >Kartik Bansal</a
+                >
+                2022. All Rights Reserved.
               </p>
               <p class="xl:pl-4 text-sm">
                 Development Copyright @<a
                   href="https://raddito.com/"
                   class="underline hover:no-underline"
+                  target="_blank"
                   >Raddito</a
                 >
                 <span id="year"></span>. All Rights Reserved.

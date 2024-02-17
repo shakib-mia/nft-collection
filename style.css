@@ -5,12 +5,16 @@
 @tailwind utilities;
 
 .container {
-  @apply !max-w-[1200px] !mx-auto px-4 xl:px-0;
+  @apply !max-w-[1200px] !mx-auto px-5 xl:px-0;
 }
 
 body {
   font-family: "Poppins", sans-serif;
   @apply bg-[#0D0B0C] text-white overflow-x-hidden text-base;
+}
+
+#nav-check:checked ~ #nav-items {
+  @apply p-5;
 }
 
 ::-webkit-scrollbar {
