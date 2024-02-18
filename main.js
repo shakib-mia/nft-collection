@@ -1,6 +1,5 @@
-import Lenis from "@studio-freight/lenis";
 AOS.init();
-// alert(window.innerWidth);
+import Lenis from "@studio-freight/lenis";
 const lenis = new Lenis();
 
 lenis.on("scroll", (e) => {
@@ -24,7 +23,6 @@ document.getElementById("nav-check").addEventListener("change", (e) => {
 document.getElementById("year").innerText = new Date().getFullYear();
 
 document.getElementById("nav-items").classList.add("top-[32px]");
-// document.getElementById("nav-items").style.top = 32 + "px";
 
 function raf(time) {
   lenis.raf(time);
@@ -32,8 +30,6 @@ function raf(time) {
 }
 
 requestAnimationFrame(raf);
-
-// window.addEventListener("scroll", (e) => console.log(e));
 
 function startTimer(duration) {
   var timer = duration,
@@ -49,7 +45,6 @@ function startTimer(duration) {
     minutes = minutes < 10 ? "0" + minutes : minutes;
     seconds = seconds < 10 ? "0" + seconds : seconds;
 
-    // display.textContent = hours + ":" + minutes + ":" + seconds;
     document.getElementById("hour").textContent = hours;
     document.getElementById("minutes").textContent = minutes;
     document.getElementById("seconds").textContent = seconds;
@@ -57,7 +52,6 @@ function startTimer(duration) {
     if (--timer < 0) {
       timer = duration;
       clearInterval(interval);
-      // alert("Timer finished!");
     }
   }, 1000);
 }
