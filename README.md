@@ -15,7 +15,7 @@ Trending artworks and popular artists are prominently showcased, providing insig
 ### Fonts Used
 
 1. [Clash Display](https://www.fontshare.com/fonts/clash-display)
-2. [Ppppins](https://fonts.google.com/specimen/Poppins)
+2. [Poppins](https://fonts.google.com/specimen/Poppins)
 
 ### Images Source
 
