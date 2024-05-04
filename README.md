@@ -4,6 +4,8 @@ This website serves as a dynamic platform for the discovery and collection of ra
 
 Trending artworks and popular artists are prominently showcased, providing insights into the current market favorites and emerging talents. With its comprehensive approach to the digital art NFT space, the website encourages users to join its community, offering an exclusive gateway to the best NFT collections and fostering a connection between art enthusiasts and creators.
 
+[Click here](https://nft-collection-shakib.netlify.app/) to get the live preview
+
 ## Packages
 
 1. **AOS (Animate on Scroll)**: For Scrolling Animation
