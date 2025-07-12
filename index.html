@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.png"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NFT Collections</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Navbar Section -->
+
+    <nav class="fixed top-0 left-0 w-screen py-5 z-[99999]" id="navbar">
+      <div
+        class="flex justify-between container items-start xl:items-center relative"
+      >
+        <img src="./assets/images/logo.png" alt="logo" />
+        <input type="checkbox" id="nav-check" class="hidden" />
+        <label for="nav-check" class="xl:hidden absolute right-4 top-2">
+          <img
+            src="./assets/icons/hamburger.png"
+            class="w-[30px] h-auto"
+            alt="hamburger"
+          />
+        </label>
+        <ul
+          class="flex flex-col xl:flex-row gap-5 xl:gap-[3.12rem] items-end xl:items-center xl:justify-end h-0 xl:h-auto overflow-hidden transition-[height] w-full backdrop-blur xl:backdrop-blur-0 absolute left-0 md:static mt-10 xl:mt-0"
+          id="nav-items"
+        >
+          <li>
+            <a href="#">About us</a>
+          </li>
+          <li>
+            <a href="#">Store</a>
+          </li>
+          <li>
+            <a href="#">Games</a>
+          </li>
+          <li>
+            <a href="#">
+              <button class="primary">Connect Wallet</button>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+
+    <header class="pt-32 xl:pt-0 xl:h-screen w-screen">
+      <div class="h-full">
+        <div
+          class="grid grid-cols-1 xl:grid-cols-2 w-full container items-center h-full"
+        >
+          <img
+            src="./assets/images/header-bg.png"
+            alt=""
+            class="absolute left-0 top-0"
+          />
+          <aside class="z-0 pt-10 xl:pt-[100px] text-center xl:text-left">
+            <h1
+              class="font-semibold xl:leading-[5.625rem]"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+            >
+              Explore Unique Selections Of NFT's & Artwork
+            </h1>
+            <p
+              class="text-lg opacity-80 mt-5 mb-14"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+              data-aos-delay="100"
+            >
+              Design, Discover, & Gather Digital Art NFTs
+            </p>
+            <button
+              class="secondary"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+              data-aos-delay="150"
+            >
+              Explore
+            </button>
+
+            <div
+              class="grid grid-cols-3 mt-16 xl:mt-14"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+              data-aos-delay="200"
+            >
+              <aside>
+                <h2 class="font-semibold">30k+</h2>
+                <p>Artwork</p>
+              </aside>
+
+              <aside>
+                <h2 class="font-semibold">10k+</h2>
+                <p>Auctions</p>
+              </aside>
+
+              <aside>
+                <h2 class="font-semibold">5k+</h2>
+                <p>Artists</p>
+              </aside>
+            </div>
+          </aside>
+
+          <aside
+            class="hidden xl:block"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          >
+            <img
+              src="./assets/images/hero-image.png"
+              class="w-full scale-150 relative -right-[5.5rem]"
+              alt=""
+            />
+          </aside>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Section -->
+    <main class="absolute z-0 left-0 right-0 mx-auto">
+      <!-- Bitcoin Art work section -->
+      <section
+        class="grid grid-cols-1 items-center xl:grid-cols-2 relative container py-10"
+      >
+        <aside
+          class="hidden xl:block"
+          data-aos="fade-left"
+          data-aos-duration="1500"
+        >
+          <img
+            src="./assets/images/art-work.png"
+            alt="art-work"
+            class="relative xl:-left-14 xl:scale-150"
+          />
+        </aside>
+
+        <aside class="z-[99999]">
+          <h1
+            class="xl:w-7/12 font-medium"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
+            Bitcoin Art Work
+          </h1>
+          <p
+            class="text-[#ccc] mt-3 xl:mt-5"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            data-aos-delay="100"
+          >
+            Created by <span class="text-[#DD24E1]">Jonathan Borba</span>
+          </p>
+
+          <div
+            class="py-8 xl:py-20 flex divide-x-2 divide-white text-white"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            data-aos-delay="200"
+          >
+            <div class="w-5/12 xl:pr-12">
+              <p class="font-medium">Current Bid</p>
+              <h4>1.09 ETH</h4>
+              <p>$1,835</p>
+            </div>
+            <div class="w-7/12 pl-5 xl:pl-12">
+              <p class="font-medium">Current Bid</p>
+              <div class="grid grid-cols-3">
+                <aside>
+                  <h4 id="hour">18</h4>
+                  <p>Hours</p>
+                </aside>
+
+                <aside>
+                  <h4 id="minutes">00</h4>
+                  <p>Minutes</p>
+                </aside>
+
+                <aside>
+                  <h4 id="seconds">00</h4>
+                  <p>Seconds</p>
+                </aside>
+              </div>
+            </div>
+          </div>
+          <button
+            class="primary flex items-center gap-2"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            data-aos-delay="300"
+          >
+            Explore More
+            <img
+              src="./assets/icons/arrow-up-right.svg"
+              class="w-6 h-6"
+              alt=""
+            />
+          </button>
+        </aside>
+      </section>
+
+      <!-- Trending section -->
+      <section
+        class="relative bg-[size:100%_100%] bg-no-repeat xl:pb-[12.5rem]"
+      >
+        <img
+          src="./assets/images/trending-bg.png"
+          class="absolute z-0 xl:top-60 2xl:scale-110"
+          alt=""
+        />
+        <div class="container relative z-20">
+          <h2
+            class="font-medium xl:font-semibold"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            data-aos-delay="100"
+          >
+            Trending Artworks
+          </h2>
+          <p
+            class="text-sm md:text-base xl:text-lg opacity-80 xl:w-8/12 mt-5"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            data-aos-delay="200"
+          >
+            Explore the most captivating and popular creations from talented
+            artists around the world. Stay inspired by unique pieces that define
+            the future of digital art.
+          </p>
+
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 mt-4 xl:mt-6 gap-4 xl:gap-20"
+          >
+            <div
+              class="flex flex-col gap-10 md:gap-14 xl:gap-20 md:mt-20 xl:mt-36"
+            >
+              <a
+                href="#"
+                class="inline-block"
+                data-aos="fade-up"
+                data-aos-delay="100"
+                data-aos-duration="1500"
+              >
+                <h6 class="text-3xl font-medium">Sebastian</h6>
+                <p class="text-xs">Golden Flower</p>
+                <img
+                  src="./assets/images/trending/Rectangle 22743.jpg"
+                  alt=""
+                  class="mt-4"
+                />
+              </a>
+              <a
+                href="#"
+                class="inline-block"
+                data-aos="fade-up"
+                data-aos-delay="100"
+                data-aos-duration="1500"
+              >
+                <h6 class="text-3xl font-medium">Javier Miranda</h6>
+                <p class="text-xs">Golden Flower</p>
+                <img
+                  src="./assets/images/trending/Rectangle 22745.jpg"
+                  alt=""
+                  class="mt-4"
+                />
+              </a>
+              <a
+                href="#"
+                class="inline-block"
+                data-aos="fade-up"
+                data-aos-delay="100"
+                data-aos-duration="1500"
+              >
+                <h6 class="text-3xl font-medium">Milad Fakurian</h6>
+                <p class="text-xs">Golden Flower</p>
+                <img
+                  src="./assets/images/trending/Rectangle 22747.jpg"
+                  alt=""
+                  class="mt-4"
+                />
+              </a>
+            </div>
+
+            <div class="flex flex-col gap-10 md:gap-14 xl:gap-20">
+              <a
+                href="#"
+                class="inline-block"
+                data-aos="fade-up"
+                data-aos-delay="100"
+                data-aos-duration="1500"
+              >
+                <h6 class="text-3xl font-medium">Ferhat Deniz</h6>
+                <p class="text-xs">Golden Flower</p>
+                <img
+                  src="./assets/images/trending/Rectangle 22742.jpg"
+                  alt=""
+                  class="mt-4"
+                />
+              </a>
+              <a
+                href="#"
+                class="inline-block"
+                data-aos="fade-up"
+                data-aos-delay="100"
+                data-aos-duration="1500"
+              >
+                <h6 class="text-3xl font-medium">Polina Kondrashova</h6>
+                <p class="text-xs">Golden Flower</p>
+                <img
+                  src="./assets/images/trending/Rectangle 22744.jpg"
+                  alt=""
+                  class="mt-4"
+                />
+              </a>
+              <a
+                href="#"
+                class="inline-block"
+                data-aos="fade-up"
+                data-aos-delay="100"
+                data-aos-duration="1500"
+              >
+                <h6 class="text-3xl font-medium">Erick Butler</h6>
+                <p class="text-xs">Golden Flower</p>
+                <img
+                  src="./assets/images/trending/Rectangle 22746.jpg"
+                  alt=""
+                  class="mt-4"
+                />
+              </a>
+
+              <a href="#">
+                <button
+                  class="w-fit mx-auto xl:ml-auto primary flex items-center gap-2"
+                  data-aos="fade-right"
+                  data-aos-duration="1500"
+                >
+                  Explore More
+                  <img
+                    src="./assets/icons/arrow-up-right.svg"
+                    class="w-6 h-6"
+                    alt=""
+                  />
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Popular Artists Section -->
+      <section class="container relative z-0">
+        <div
+          class="flex flex-col md:flex-row items-center justify-between mt-10 xl:mt-0 gap-7 xl:gap-0"
+        >
+          <h2
+            class="font-medium"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
+            Top Artists
+          </h2>
+          <a href="#">
+            <button
+              class="primary flex items-center gap-2"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+              data-aos-delay="1000"
+            >
+              View All Artists
+              <img
+                src="./assets/icons/arrow-up-right.svg"
+                class="w-6 h-6"
+                alt=""
+              />
+            </button>
+          </a>
+        </div>
+
+        <div
+          class="grid grid-cols-4 gap-6 xl:gap-0 text-center xl:text-left mt-10 xl:mt-20"
+        >
+          <div
+            class="flex flex-col items-center gap-2 xl:gap-9"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+          >
+            <img
+              src="./assets/images/popular-artists/Ellipse 434.jpg"
+              alt="popular-artists-1"
+              class="rounded-full"
+            />
+            <h4 class="clash-display">Ayesha Rahman</h4>
+          </div>
+
+          <div
+            class="flex flex-col items-center gap-2 xl:gap-9"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+            data-aos-delay="200"
+          >
+            <img
+              src="./assets/images/popular-artists/Ellipse 435.jpg"
+              alt="popular-artists-1"
+              class="rounded-full"
+            />
+            <h4 class="clash-display">Laila Karim</h4>
+          </div>
+
+          <div
+            class="flex flex-col items-center gap-2 xl:gap-9"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+            data-aos-delay="400"
+          >
+            <img
+              src="./assets/images/popular-artists/Ellipse 436.jpg"
+              alt="popular-artists-1"
+              class="rounded-full"
+            />
+            <h4 class="clash-display">Abdur Rahman</h4>
+          </div>
+
+          <div
+            class="flex flex-col items-center gap-2 xl:gap-9"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+            data-aos-delay="600"
+          >
+            <img
+              src="./assets/images/popular-artists/Ellipse 437.jpg"
+              alt="popular-artists-1"
+              class="rounded-full"
+            />
+            <h4 class="clash-display">Nadia Siddique</h4>
+          </div>
+        </div>
+      </section>
+
+      <!--  Join Community Section  -->
+      <section class="mt-20 xl:mt-48 relative">
+        <img
+          src="./assets/images/Ellipse 434.png"
+          alt=""
+          class="absolute right-0 bottom-0 h-[26%]"
+        />
+        <div class="container grid grid-cols-1 xl:grid-cols-2 mb-10">
+          <div data-aos="fade-left" data-aos-duration="1500">
+            <img
+              src="./assets/images/community.png"
+              alt=""
+              class="relative xl:-left-20 xl:scale-150 hidden xl:block"
+            />
+          </div>
+
+          <aside class="xl:mt-40 flex flex-col items-center xl:items-start">
+            <h3
+              class="font-semibold leading-9 md:leading-[3rem] xl:leading-[3.75rem] md:w-1/2 xl:w-10/12 text-center xl:text-left"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+            >
+              Become a member and access top NFT collections
+            </h3>
+
+            <button
+              class="secondary mt-6 xl:mt-12 relative left-0 xl:-left-8"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+            >
+              Join Community
+            </button>
+          </aside>
+        </div>
+
+        <!-- Footer Section -->
+
+        <footer
+          class="backdrop-blur-xl py-14 w-screen"
+          style="
+            background: linear-gradient(
+              92deg,
+              rgba(255, 255, 255, 0.12) 0%,
+              rgba(255, 255, 255, 0.08) 100%
+            );
+          "
+        >
+          <div class="relative container">
+            <div
+              class="flex gap-5 flex-col items-center lg:flex-row flex-wrap justify-between"
+            >
+              <h4 class="clash-display font-semibold">NFTme</h4>
+              <ul
+                class="flex flex-col items-center lg:flex-row gap-[1.2rem] xl:gap-16 order-2 xl:order-1 w-full xl:w-auto"
+              >
+                <li class="text-base">
+                  <a href="#" class="hover:underline">Explore</a>
+                </li>
+                <li class="text-base">
+                  <a href="#" class="hover:underline">Marketplace</a>
+                </li>
+                <li class="text-base">
+                  <a href="#" class="hover:underline">Artists</a>
+                </li>
+                <li class="text-base">
+                  <a href="#" class="hover:underline">Contact</a>
+                </li>
+              </ul>
+
+              <aside
+                class="flex justify-between md:justify-end xl:justify-normal md:gap-4 xl:gap-7 w-1/2 xl:w-auto order-1 xl:order-2"
+              >
+                <div
+                  class="w-10 h-10 bg-white rounded-full flex justify-center items-center"
+                >
+                  <img
+                    src="./assets/icons/social/ant-design_instagram-filled.jpg"
+                    class="h-5 w-auto"
+                    alt=""
+                  />
+                </div>
+
+                <div
+                  class="w-10 h-10 bg-white rounded-full flex justify-center items-center"
+                >
+                  <img
+                    src="./assets/icons/social/brandico_facebook.jpg"
+                    class="h-5 w-auto"
+                    alt=""
+                  />
+                </div>
+
+                <div
+                  class="w-10 h-10 bg-white rounded-full flex justify-center items-center"
+                >
+                  <img
+                    src="./assets/icons/social/akar-icons_twitter-fill.jpg"
+                    class="h-5 w-auto"
+                    alt=""
+                  />
+                </div>
+              </aside>
+            </div>
+
+            <div
+              class="flex flex-col xl:flex-row gap-4 xl:divide-x-2 divide-white mt-10 xl:mt-28 justify-center text-center xl:text-left"
+            >
+              <p class="text-sm">Privacy policy</p>
+              <p class="xl:pl-4 text-sm">
+                Copyright @<a
+                  class="underline hover:no-underline"
+                  href="https://www.figma.com/file/5Qocnzgr3m9770W0Z1nPHy/Landing-Page-UI-Kit-(Community)?type=design&node-id=485-190&mode=design&t=Z7w8azF78322ygWO-0"
+                  target="_blank"
+                  >Kartik Bansal</a
+                >
+                2022. All Rights Reserved.
+              </p>
+              <p class="xl:pl-4 text-sm">
+                Development Copyright @<a
+                  class="underline hover:no-underline"
+                  href="https://raddito.net/"
+                  target="_blank"
+                  rel="nofollow"
+                  >Raddito LLC</a
+                >
+                <span id="year"></span>. All Rights Reserved.
+              </p>
+              <p class="xl:pl-4 text-sm">Terms of service</p>
+            </div>
+          </div>
+        </footer>
+      </section>
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+@import "./assets/clash-display.css";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  @apply !max-w-[1200px] !mx-auto px-5 xl:px-0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  @apply bg-[#0D0B0C] text-white overflow-x-hidden text-base;
+}
+
+#nav-check:checked ~ #nav-items {
+  @apply p-5;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+h1,
+h2,
+h3,
+h6,
+button,
+nav,
+.clash-display {
+  font-family: "ClashDisplay-Variable";
+}
+
+button {
+  @apply relative z-[9999];
+}
+
+button.primary {
+  @apply bg-white text-black px-3 py-2 xl:px-6 xl:py-4 font-semibold tracking-[0.0125rem] rounded-md hover:underline;
+}
+
+button.secondary {
+  background-image: url("./assets/images/button-bg.svg");
+  @apply bg-[size:100%_100%] bg-no-repeat px-12 py-3 xl:px-20 xl:py-5 text-xl font-semibold hover:underline underline-offset-4;
+}
+
+h1 {
+  @apply text-5xl md:text-6xl lg:text-7xl;
+}
+
+h2 {
+  @apply text-4xl md:text-5xl lg:text-6xl;
+}
+
+h3 {
+  @apply text-3xl md:text-[4rem] lg:text-5xl;
+}
+
+h4 {
+  @apply text-lg md:text-2xl lg:text-4xl;
+}
+
+p {
+  @apply text-xs md:text-base lg:text-lg;
+}
