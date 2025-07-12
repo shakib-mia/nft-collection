@@ -27,7 +27,7 @@ Trending artworks and popular artists are prominently showcased, providing insig
 
 1. Designed By [Kartik Bansal](<https://www.figma.com/file/5Qocnzgr3m9770W0Z1nPHy/Landing-Page-UI-Kit-(Community)?type=design&node-id=485-190&mode=design&t=hfAUqmbPIaSiB9TR-0>)
 
-2. Developed By [Md. Shakib Mia](https://md-shakib-mia.web.app/)
+2. Developed By [Template Hearth](https://www.facebook.com/templatehearth/)
 
 # Available Scripts
 
